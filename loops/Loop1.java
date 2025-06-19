@@ -243,6 +243,80 @@ Enter a number:
 371
 371is an Armstrong number
 */
+/*program9
+int num=97;
+System.out.println( "the given  number is:"+num);
+int count=0;
+if(num==2)
+{
+System.out.println( num+"is a prime number");
+}
+else
+{
+for(int i=1;i<=num;i++)
+{
+if(num%i==0){
+count++;
+}
+}
+if(count==2)
+{
+System.out.println( num+"is a prime number");
+}
+else{
+System.out.println( num+"is  not a prime number");}
+}
+}
+}
+output:the given  number is:97
+97is a prime number*/
+/*program10
+int n,rev=0,i,digit;
+Scanner s=new Scanner(System.in);
+System.out.println("enter the value of n:");
+n=s.nextInt();
+i=n;
+while(n>0)
+{
+digit=n%10;
+rev=(rev*10)+digit;
+n=n/10;
+}
+if(i==rev)
+{
+System.out.println(i+" is a palindrome");
+}
+else
+{
+System.out.println(i+" is not  a palindrome");
+}
+}
+}
+output:enter the value of n:
+141
+141 is a palindrome*/
+/*program11
+Scanner s=new Scanner(System.in);
+System.out.println("Enter an integer:");
+int number=s.nextInt();
+int remainder=number %2;
+switch(remainder)
+{
+case 0:
+System.out.println(number+"is an even number");
+break;
+case-1:
+System.out.println(number+"is an odd number");
+break;
+default:
+System.out.println("invalid input or unexpected remainder:");
+}
+}
+}
+output:Enter an integer:
+12
+12is an even number*/
+
 /*program12
 Scanner scanner=new Scanner(System.in);
 System.out.println("enter gender(M/F):");
@@ -288,62 +362,3 @@ System.out.println("the largest number is:"+largest);
 }
 }
 output:the largest number is:23*/
-/*program11
-Scanner s=new Scanner(System.in);
-System.out.println("Enter an integer:");
-int number=s.nextInt();
-int remainder=number %2;
-switch(remainder)
-{
-case 0:
-System.out.println(number+"is an even number");
-break;
-case-1:
-System.out.println(number+"is an odd number");
-break;
-default:
-System.out.println("invalid input or unexpected remainder:");
-}
-}
-}
-output:Enter an integer:
-12
-12is an even number*/
-/*program9
-int num=97;
-System.out.println( "the given  number is:"+num);
-int count=0;
-if(num==2)
-{
-System.out.println( num+"is a prime number");
-}
-else
-{
-for(int i=1;i<=num;i++)
-{
-if(num%i==0){
-count++;
-}
-}
-if(count==2)
-{
-System.out.println( num+"is a prime number");
-}
-else{
-System.out.println( num+"is  not a prime number");}
-}
-}
-}
-output:the given  number is:97
-97is a prime number
-
-
-
-
-
-
-
-
-
-
-
